@@ -21,13 +21,17 @@ public class Main {
 
         // For-each loop
         for (Plant specimen : plants) {
-            String description = String.format("The %s (%s)", specimen.getCommonName(), specimen.getLatinName());
-            if (specimen.canHurtYou()) {
-                description += " can hurt you with " + specimen.getTypeOfHurting() + "!";
-            } else {
-                description += " can't hurt you!";
-            }
-            System.out.println(description);
+            printPlantInfo(specimen);
         }
+    }
+
+    public static void printPlantInfo(Plant specimen) {
+        String description = String.format("The %s (%s)", specimen.getCommonName(), specimen.getLatinName());
+        if (specimen.canHurtYou()) {
+            description += " can hurt you with " + specimen.getTypeOfHurting() + "!";
+        } else {
+            description += " can't hurt you!";
+        }
+        System.out.println(description);
     }
 }
