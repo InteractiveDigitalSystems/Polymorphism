@@ -8,7 +8,7 @@ public class FloweringPlant extends Plant implements Danger {
     }
 
     public boolean canHurtYou() {
-        return false;
+        return this.isPoisonous;
     }
 
     public String getTypeOfHurting() {
