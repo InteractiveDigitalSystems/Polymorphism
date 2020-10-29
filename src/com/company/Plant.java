@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Plant {
+public abstract class Plant implements Danger{
     String commonName;
     String latinName;
 
@@ -17,7 +17,4 @@ public abstract class Plant {
         return latinName;
     }
 
-    abstract public boolean canHurtYou();
-
-    public abstract String getTypeOfHurting();
 }

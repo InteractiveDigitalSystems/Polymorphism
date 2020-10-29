@@ -1,6 +1,6 @@
 package com.company;
 
-public class Cactus extends Plant {
+public class Cactus extends Plant implements Danger {
     int maxSpineLength; // centimeter
     public Cactus(String commonName, String latinName, int maxSpineLength) {
         super(commonName, latinName);
@@ -11,12 +11,10 @@ public class Cactus extends Plant {
         return maxSpineLength > 0;
     }
 
-    @Override
     public boolean canHurtYou() {
         return isSpiky();
     }
 
-    @Override
     public String getTypeOfHurting() {
         return "with it's spiky spines";
     }

@@ -1,6 +1,6 @@
 package com.company;
 
-public class Tree extends Plant {
+public class Tree extends Plant implements Danger {
     boolean hasPoisonousFruits;
 
     public Tree(String commonName, String latinName, boolean hasPoisonousFruits) {
@@ -8,12 +8,10 @@ public class Tree extends Plant {
         this.hasPoisonousFruits = hasPoisonousFruits;
     }
 
-    @Override
     public boolean canHurtYou() {
         return hasPoisonousFruits;
     }
 
-    @Override
     public String getTypeOfHurting() {
         return "with it's posinous fruits";
     }
