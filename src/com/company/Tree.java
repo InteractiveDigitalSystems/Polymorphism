@@ -2,10 +2,12 @@ package com.company;
 
 public class Tree extends Plant {
     boolean hasPoisonousFruits;
+    int averageNumberOfLeaves;
 
-    public Tree(String commonName, String latinName, boolean hasPoisonousFruits) {
+    public Tree(String commonName, String latinName, boolean hasPoisonousFruits, int averageNumberOfLeaves ) {
         super(commonName, latinName);
         this.hasPoisonousFruits = hasPoisonousFruits;
+        this.averageNumberOfLeaves = averageNumberOfLeaves;
     }
 
     @Override

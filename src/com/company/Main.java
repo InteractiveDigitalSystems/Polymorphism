@@ -16,8 +16,8 @@ public class Main {
         plants.add(new FloweringPlant("Fireweed", "Chamaenerion angustifolium", false));
 
         // Add trees
-        plants.add(new Tree("Manchineel", "Hippomane mancinella", true));
-        plants.add(new Tree("Apple Tree", "Malus domestica)", false));
+        plants.add(new Tree("Manchineel", "Hippomane mancinella", true, 3800 ));
+        plants.add(new Tree("Apple Tree", "Malus domestica)", false, 6300));
 
         // For-each loop
         for (Plant specimen : plants) {
