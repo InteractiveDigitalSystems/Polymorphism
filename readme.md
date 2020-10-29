@@ -1,4 +1,6 @@
 # Polymorphism in Java
+_Check the interface branch to see example with an Interface._
+
 This brief example shows Polymorphism which is the ability of objects to take different forms.
 
  In this example we are exploring dangerous plant species - namely _Cactus_, _Tree_ and _FloweringPlant_. These species are all a subclass of the abstract class _Plant_. _Plant_ has the abstract method *canHurtYou()* and because of inheritance and polymorphism, implementations of this method can vary dependent on the different sub-classes. 
